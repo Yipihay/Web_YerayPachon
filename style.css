@@ -1,0 +1,658 @@
+@font-face {
+	font-family: "OpenSansRegular";
+	src: local("OpenSansRegular"), url("Fonts/OpenSansRegular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: local("OpenSansBold"), url("Fonts/OpenSansBold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "OpenSansBlack";
+	src: local("OpenSansBlack"), url("Fonts/OpenSansBlack.woff2") format("woff2");
+}
+@font-face {
+	font-family: "MontSerratRegular";
+	src: local("MontSerratRegular"), url("Fonts/Montserrat-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "RalewayMedium";
+	src: local("RalewayMedium"), url("Fonts/Raleway-Medium.woff2") format("woff2");
+}
+
+@keyframes levitate {
+	0%{
+		transform: translate(0,-15px);
+	}
+	100%{
+		transform: translate(0,15px);
+	}
+}
+
+body{
+	font-family: "MontSerratRegular", sans-serif;
+	font-size: 14px;
+	color: #232330;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	max-width: 1700px;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+/*************************** HEADER ***************************/
+
+#main_header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+#main_header ul{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: flex-end;
+	margin: 20px 80px;
+}
+
+#main_header ul li{
+	font-size: 24px;
+	margin: 0 5px 10px;
+}
+
+#main_header .image{
+	margin: 20px 80px;
+	margin-right: 0px;
+}
+
+#main_header nav ul{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+	margin: 30px;
+}
+
+#main_header nav ul a{
+	font-family: "RalewayMedium";
+	font-size: 16px;
+	color: white;
+	background: #333333;
+	border-radius: 10px;
+	border-color: #333333;
+	border-style: double;
+	padding: 8px;
+	align-self: center;
+	align-items: center;
+	opacity: 0.8;
+}
+
+#main_header nav ul a:hover{
+opacity: 1;
+}
+
+/*************************** KATHARSIS ***************************/
+
+.Katharsis {
+	color: #fff;
+	background-image: url('KatharsisBackground.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	height: 650px;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.Katharsis strong {
+	text-decoration: underline;
+}
+
+.Katharsis h2 {
+		font-size: 1rem;
+}
+
+
+.Katharsis ul{
+	display: flex;
+}
+
+.Katharsis ul li{
+		margin-top: 0px;
+		margin-right: 10px;
+}
+
+.Katharsis .BasicInfo{
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 1.5fr 1.5 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 10px;
+	align-items: : center;
+	padding-left: 0px
+}
+
+.Katharsis .BasicInfo p{
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 21px;
+}
+
+.Katharsis .BasicInfo .button{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	background: #131b2b;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	align-items: : center;
+	align-self: center;
+	opacity: 0.8;
+	margin-top: 5px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Katharsis .BasicInfo .button:hover{
+	opacity: 1;
+}
+
+.Katharsis .BasicInfo h1{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	font-size: 3rem;
+	text-shadow: 3px 3px 6px black;
+}
+
+.Katharsis iframe{
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Katharsis .WorkDone{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	color: #131b2b;
+	background: white;
+	border-radius: 10px;
+	border-color: #131b2b;
+	border-style: double;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Katharsis h1{
+	font-family: "RalewayMedium";
+	font-size: 4rem;
+	max-width: 800px;
+	margin: 0 0px;
+}
+
+.Katharsis p a{
+	font-family: "RalewayMedium";
+	font-size: 18px;
+	color: #ff961f;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+/*************************** CHESS MESS ***************************/
+
+.Chess {
+	color: #fff;
+	background-image: url('ChessBackground.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	height: 650px;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.Chess img {
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Chess strong {
+	text-decoration: underline;
+}
+
+.Chess h2 {
+		font-size: 1rem;
+}
+
+.Chess ul{
+	display: flex;
+}
+
+.Chess ul li{
+		margin-top: 0px;
+		margin-right: 10px;
+}
+
+.Chess .BasicInfo{
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 1.5fr 1.5 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 10px;
+	align-items: : center;
+	padding-left: 0px
+}
+
+.Chess .BasicInfo p{
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 21px;
+}
+
+.Chess .BasicInfo .button{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	background: #37b2b5;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	align-items: : center;
+	align-self: center;
+	opacity: 0.8;
+	margin-top: 5px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Chess .BasicInfo .button:hover{
+	opacity: 1;
+}
+
+.Chess .BasicInfo h1{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	font-size: 3rem;
+}
+
+.Chess .WorkDone{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	color: #131b2b;
+	background: white;
+	border-radius: 10px;
+	border-color: #131b2b;
+	border-style: double;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Chess h1{
+	font-family: "RalewayMedium";
+	font-size: 4rem;
+	max-width: 800px;
+	margin: 0 0px;
+	text-shadow: 3px 3px 6px black;
+}
+
+.Chess p a{
+	font-family: "RalewayMedium";
+	font-size: 18px;
+	color: #ff961f;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+/*************************** RADIATION TRAIL ***************************/
+
+.Radiation {
+	color: #fff;
+	background-image: url('RadiationBackground.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	height: 650px;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.Radiation img {
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Radiation strong {
+	text-decoration: underline;
+}
+
+.Radiation h2 {
+		font-size: 1rem;
+}
+
+.Radiation ul{
+	display: flex;
+}
+
+.Radiation ul li{
+		margin-top: 0px;
+		margin-right: 10px;
+}
+
+.Radiation .BasicInfo{
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 1.5fr 1.5 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 10px;
+	align-items: : center;
+	padding-left: 0px
+}
+
+.Radiation .BasicInfo p{
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 21px;
+}
+
+.Radiation .BasicInfo .button{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	background: #2c1731;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	align-items: : center;
+	align-self: center;
+	opacity: 0.8;
+	margin-top: 5px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Radiation .BasicInfo .button:hover{
+	opacity: 1;
+}
+
+.Radiation .BasicInfo h1{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	font-size: 3rem;
+}
+
+.Radiation .WorkDone{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	color: #131b2b;
+	background: white;
+	border-radius: 10px;
+	border-color: #131b2b;
+	border-style: double;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Radiation h1{
+	font-family: "RalewayMedium";
+	font-size: 4rem;
+	max-width: 800px;
+	text-shadow: 3px 3px 6px black;
+	margin: 0 0px;
+}
+
+.Radiation p a{
+	font-family: "RalewayMedium";
+	font-size: 18px;
+	color: #ff961f;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+/*************************** RADIATION TRAIL ***************************/
+
+.Crowded {
+	color: #fff;
+	background-image: url('CrowdedBackground.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	height: 650px;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.Crowded img {
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Crowded strong {
+	text-decoration: underline;
+}
+
+.Crowded h2 {
+		font-size: 1rem;
+}
+
+.Crowded ul{
+	display: flex;
+}
+
+.Crowded ul li{
+		margin-top: 0px;
+		margin-right: 10px;
+}
+
+.Crowded .BasicInfo{
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 1.5fr 1.5 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 10px;
+	align-items: : center;
+	padding-left: 0px
+}
+
+.Crowded .BasicInfo p{
+	font-size: 16px;
+	margin-top: 10px;
+	line-height: 21px;
+}
+
+.Crowded .BasicInfo .button{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	background: #333333;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	align-items: : center;
+	align-self: center;
+	opacity: 0.8;
+	margin-top: 5px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Crowded .BasicInfo .button:hover{
+	opacity: 1;
+}
+
+.Crowded .BasicInfo h1{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	font-size: 3rem;
+}
+
+.Crowded .WorkDone{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	color: #131b2b;
+	background: white;
+	border-radius: 10px;
+	border-color: #131b2b;
+	border-style: double;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.Crowded h1{
+	font-family: "RalewayMedium";
+	font-size: 4rem;
+	max-width: 800px;
+	text-shadow: 3px 3px 6px black;
+	margin: 0 0px;
+}
+
+.Crowded p a{
+	font-family: "RalewayMedium";
+	font-size: 18px;
+	color: #ff961f;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+/*************************** ABOUT ME ***************************/
+
+.AboutMe {
+	color: #fff;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+	display: grid;
+	height: 450px;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.AboutMe img {
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.AboutMe strong {
+	text-decoration: underline;
+}
+
+.AboutMe h2 {
+		font-size: 1rem;
+}
+
+.AboutMe ul{
+	display: flex;
+}
+
+.AboutMe ul li{
+		margin-top: 0px;
+		margin-right: 10px;
+}
+
+.AboutMe .BasicInfo{
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 1.5fr 1.5 ;
+  grid-column-gap: 1rem;
+  grid-row-gap: 10px;
+	align-items: : center;
+	padding-left: 0px
+}
+
+.AboutMe .BasicInfo p{
+	font-size: 18px;
+	margin-top: 10px;
+	line-height: 20px;
+	color: black;
+}
+
+.AboutMe .BasicInfo .button{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	background: #333333;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	align-items: : center;
+	align-self: center;
+	text-align: center;
+	opacity: 0.8;
+	margin-top: 5px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.AboutMe .BasicInfo .button:hover{
+	opacity: 1;
+}
+
+.AboutMe .BasicInfo h1{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	font-size: 3rem;
+	color: #333333
+}
+
+.AboutMe .WorkDone{
+	font-family: "RalewayMedium";
+	font-size: 1rem;
+	color: #131b2b;
+	background: white;
+	border-radius: 10px;
+	border-color: #131b2b;
+	border-style: double;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,1);
+}
+
+.AboutMe h1{
+	font-family: "RalewayMedium";
+	font-size: 4rem;
+	max-width: 800px;
+	margin-bottom: 40px;
+}
+
+.AboutMe p a{
+	font-family: "RalewayMedium";
+	font-size: 18px;
+	color: #ff961f;
+	display: inline-block;
+	margin: 0 15px;
+}
